@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact · Mariam Bouzidi</title><meta name="description" content="Mariam Bouzidi, data science engineer building applied AI systems under real-world constraints.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="nav"><div class="wrap"><a class="logo" href="index.html">Mariam Bouzidi</a><nav aria-label="Primary">
+<a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav></div></header><main>
+<div class="page-head"><div class="wrap"><h1>Let's talk</h1>
+<p class="sub" style="margin-top:14px">I'm open to engineering roles and research collaborations. Email is the fastest way to reach me.</p>
+<a class="mail" href="mailto:mariambouzidi70@gmail.com">mariambouzidi70@gmail.com</a></div></div>
+<section><div class="wrap"><div class="grid2" style="align-items:start">
+<div class="card"><h3 style="margin-bottom:18px">Send a message</h3>
+<form id="f"><label>Your name<input name="n" required></label><label>Your email<input name="e" type="email" required></label><label>Message<textarea name="m" rows="5" required></textarea></label>
+<button class="btn primary" type="submit" style="cursor:pointer">Open in my email app</button></form></div>
+<div><h3>Find me elsewhere</h3><div class="links">
+<a href="https://www.linkedin.com/in/mariam-bouzidi">LinkedIn <span>↗</span></a>
+<a href="https://github.com/BouzidiMariam">GitHub <span>↗</span></a>
+<a href="CV.pdf">Download my CV <span>↓</span></a></div></div></div></div></section>
+<script>
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
+location.href='mailto:mariambouzidi70@gmail.com?subject='+encodeURIComponent('Message from '+d.get('n'))+'&body='+encodeURIComponent(d.get('m')+'\n\n'+d.get('n')+' ('+d.get('e')+')');});
+</script>
+</main><footer><div class="wrap"><span>© <span id="yr"></span> Mariam Bouzidi · Tunis, Tunisia</span><span><a href="https://www.linkedin.com/in/mariam-bouzidi">LinkedIn</a><a href="https://github.com/BouzidiMariam">GitHub</a></span></div></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script></body></html>
